@@ -33,13 +33,13 @@ public class Exc2 {
 			d = c;
 		}
 		if(a!=d && a!=f) {
-			e =a;
+			e = a;
 		}
-		else if(b!=d && b!=d) {
+		else if(b!=d && b!=f) {
 			e = b;
 		}
 		else {
-			e =c;
+			e = c;
 		}
 		System.out.println(d+" "+e+" "+f);
 		
