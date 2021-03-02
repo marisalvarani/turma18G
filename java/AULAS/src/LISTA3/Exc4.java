@@ -21,7 +21,7 @@ public class Exc4 {
 		
 		if(humor =='1') {
 			pessoaCalma++;
-		}o
+		}
 		if(humor == '2' && sexo =='1') {
 			mulherNervosa++;
 		}
