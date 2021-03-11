@@ -23,7 +23,7 @@ public class Pessoa {
 	private boolean vivo;
 	private char genero;
 	
-	//construtor
+	//construtor - TEM O MESMO NOME DA CLASSE
 	public Pessoa(String nome) {
 		super();
 		this.nome = nome;

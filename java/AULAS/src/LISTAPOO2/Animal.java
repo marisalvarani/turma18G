@@ -1,18 +1,19 @@
 package LISTAPOO2;
 
 public class Animal {
-	String nome;
-	int idade;
-	String som;
+	private String nome;
+	private int idade;
+	
 
 	
-	public Animal(String nome, int idade, String som) {
+	public Animal(String nome, int idade) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
-		this.som = som;
-		
+			
 	}
+	
+	
 
 	public String getNome() {
 		return nome;
@@ -30,15 +31,9 @@ public class Animal {
 		this.idade = idade;
 	}
 		
-	public String getSom() {
-		return som;
-	}
-
-	public void setSom(String som) {
-		this.som = som;
-	}
 
 	public String som() {
+		String som = "";
 		return som;
 	}
 

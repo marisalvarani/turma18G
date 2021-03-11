@@ -2,40 +2,23 @@ package LISTAPOO2;
 
 public class Cachorro extends Animal {
 	
-	String correr;
-	
 	
 
-	public Cachorro(String nome, int idade, String som, String correr) {
-		super(nome, idade, som);
-		this.correr = correr;
+	public Cachorro(String nome, int idade) {
+		super(nome, idade);
+		
 	}
-
-
-
-	public String getCorrer() {
-		return correr;
-	}
-
-
-
-
-	public void setCorrer(String correr) {
-		this.correr = correr;
-	}
-
-
 
 
 	public void correr() {
 		System.out.println("Correndo");
 	}
 
-	
+	@Override
 	public String som() {
+		String som = "latido";
 		return som;
 	}
-
 	
 	
 

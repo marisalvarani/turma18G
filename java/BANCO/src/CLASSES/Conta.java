@@ -67,6 +67,9 @@ public class Conta {
 		if(this.saldo>=valor) {
 			this.saldo = this.saldo - valor;
 		}
+		else {
+			System.out.println("SALDO INSUFICIENTE");
+		}
 		
 		
 	}

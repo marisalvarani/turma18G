@@ -2,7 +2,7 @@ package CLASSES;
 
 public class ContaEstudantil extends Conta {
 	
-	private double limiteEstudantil;
+	private double limiteEstudantil = 5000;
 	
 	public ContaEstudantil(int numero, String cpf, double limiteEstudantil) {
 		super(numero, cpf);
@@ -26,17 +26,16 @@ public class ContaEstudantil extends Conta {
 	public void setLimiteEstudantil(double limiteEstudantil) {
 		this.limiteEstudantil = limiteEstudantil;
 	}
-	
-	public void debito(double valor) {
-		if(this.saldo>=valor) {
-			this.saldo = this.saldo - valor;
+		
+	public double usarEstudantil(double valor) {
+		if(limiteEstudantil>=valor) {
+			System.out.println("Empréstimo de R$ "+valor+" aprovado.");
+			}
+		else {
+			System.out.println("Valor excedido");
 		}
+		return saldo+valor;
 		
-		
-	}
-	
-	public double usarEstudantil() {
-		return saldo + 5000;
 	}
 	
 

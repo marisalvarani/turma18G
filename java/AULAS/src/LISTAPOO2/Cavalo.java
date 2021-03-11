@@ -1,27 +1,13 @@
 package LISTAPOO2;
 
 public class Cavalo extends Animal {
-	
-	String correr;
-	
+		
 	
 	
-	public Cavalo(String nome, int idade, String som, String correr) {
-		super(nome, idade, som);
-		this.correr = correr;
+	public Cavalo(String nome, int idade) {
+		super(nome, idade);
 	}
 
-
-
-	public String getCorrer() {
-		return correr;
-	}
-
-
-
-	public void setCorrer(String correr) {
-		this.correr = correr;
-	}
 
 
 
@@ -29,7 +15,9 @@ public class Cavalo extends Animal {
 		System.out.println("Galopando");
 	}
 	
+	@Override
 	public String som() {
+		String som = "relincho";
 		return som;
 	}
 	
